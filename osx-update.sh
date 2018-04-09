@@ -11,8 +11,19 @@ echo "------------------------------"
 echo "Updating OSX.  If this requires a restart, run the script again."
 # Install all available updates
 sudo softwareupdate -ia
+                  #  │└─ All appropriate updates
+                  #  └── Install
 
 echo "------------------------------"
-echo "Installing Xcode Command Line Tools."
 # Install Xcode command line tools
-xcode-select --install
+
+# Check if command line tools are already installed
+xcode-select -p 2> /dev/null
+
+if [ $? -eq 0 ]
+then
+  echo "Xcode command line tools already installed."
+else
+  echo "Installing Xcode Command Line Tools."
+  xcode-select --install
+fi
