@@ -1,6 +1,7 @@
 # Casks
 tap 'caskroom/fonts'
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 cask_args appdir: '/Applications'
 
 cask 'font-source-code-pro-for-powerline'
