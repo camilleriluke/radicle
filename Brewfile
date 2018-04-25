@@ -50,7 +50,6 @@ cask 'whatsapp'
 
 # Browsers
 cask 'brave'
-cask 'firefox-beta'
 cask 'firefox'
 cask 'google-chrome-canary'
 cask 'google-chrome'
