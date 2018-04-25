@@ -13,7 +13,7 @@ cask 'alfred'
 cask 'android-file-transfer'
 cask 'caffeine'
 cask 'flux'
-cask 'gpgtools'
+cask 'gpg-suite'
 cask 'istat-menus'
 cask 'kap'
 
