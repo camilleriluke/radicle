@@ -26,8 +26,8 @@ cask 'iterm2'
 cask 'kitematic'
 cask 'postman'
 cask 'sequel-pro'
+# cask 'slack'
 cask 'slack-beta'
-cask 'slack'
 cask 'viscosity'
 cask 'visual-studio-code'
 cask 'vyprvpn'
@@ -87,7 +87,3 @@ brew 'wget'
 brew 'yarn'
 brew 'zsh-completions'
 brew 'zsh'
-
-# BeardedSpice.app
-# Stremio.app
-# 'IntelliJ IDEA.app'
