@@ -19,3 +19,4 @@ if ! [ -x "$(command -v brew)" ]; then
 fi
 
 brew bundle -v
+brew cleanup
