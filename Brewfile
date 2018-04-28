@@ -30,7 +30,6 @@ cask 'sequel-pro'
 cask 'slack-beta'
 cask 'viscosity'
 cask 'visual-studio-code'
-cask 'vyprvpn'
 
 # Design tools
 cask 'abstract'
