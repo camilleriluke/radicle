@@ -1,5 +1,5 @@
 # Casks
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 cask_args appdir: '/Applications'
