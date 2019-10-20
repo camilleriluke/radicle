@@ -7,6 +7,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until this file has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+bot "I have some questions for you before I start the setup."
+bot "What would you like the computer name to be?"
+
 ###############################################################################
 bot "Configuring General System UI/UX..."
 ###############################################################################
@@ -133,10 +136,10 @@ sudo pmset -a sms 0;ok
 ################################################
 
 # running "Set computer name (as done via System Preferences → Sharing)"
-sudo scutil --set ComputerName "Lukis-Laptoys-18"
-sudo scutil --set HostName "Lukis-Laptoys-18"
-sudo scutil --set LocalHostName "Lukis-Laptoys-18"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Lukis-Laptoys-18"
+sudo scutil --set ComputerName "$computerName"
+sudo scutil --set HostName "$computerName"
+sudo scutil --set LocalHostName "$computerName"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$computerName"
 
 running "Disable smooth scrolling"
 # (Uncomment if you’re on an older Mac that messes up the animation)
